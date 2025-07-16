@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const services = [
@@ -99,10 +100,12 @@ const Index = () => {
               <h1 className="text-2xl font-bold text-premium-dark">ArchSpace</h1>
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="#services" className="text-gray-600 hover:text-primary transition-colors">Услуги</a>
-              <a href="#portfolio" className="text-gray-600 hover:text-primary transition-colors">Портфолио</a>
-              <a href="#reviews" className="text-gray-600 hover:text-primary transition-colors">Отзывы</a>
-              <a href="#contact" className="text-gray-600 hover:text-primary transition-colors">Контакты</a>
+              <Link to="/" className="text-gray-600 hover:text-primary transition-colors">Главная</Link>
+              <Link to="/services" className="text-gray-600 hover:text-primary transition-colors">Услуги</Link>
+              <Link to="/portfolio" className="text-gray-600 hover:text-primary transition-colors">Портфолио</Link>
+              <Link to="/blog" className="text-gray-600 hover:text-primary transition-colors">Блог</Link>
+              <Link to="/reviews" className="text-gray-600 hover:text-primary transition-colors">Отзывы</Link>
+              <Link to="/contact" className="text-gray-600 hover:text-primary transition-colors">Контакты</Link>
             </nav>
             <Button className="bg-primary hover:bg-primary/90">
               Консультация
